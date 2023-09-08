@@ -1,0 +1,55 @@
+/* Styles for Contact.js component */
+/* Contact.module.css */
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.showOverlay {
+    opacity: 1;
+}
+.connectText {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    transition: color 0.5s ease-in-out;
+    font-family: Snell Roundhand,cursive;
+    font-weight:bold;
+          
+}
+
+.overlay:hover .connectText {
+    color: lightgray;
+}
+.mapContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Adjust the gap between the image and map */
+}

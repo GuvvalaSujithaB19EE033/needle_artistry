@@ -1,0 +1,189 @@
+/* Styles for the home container */
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Styles for the image container */
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    
+}
+.imageContainer1 {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    opacity: 0.8;
+}
+.imageContainer2 {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+
+}
+.imageContainer3 {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    opacity: 0.8;
+
+
+}
+
+/* Styles for Image 1 */
+.image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+
+}
+
+/* Styles for the overlay with animation */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Styles for the overlay animation when active */
+.overlay.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+}
+
+/* Styles for the title animation */
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    color: black;
+    font-family: Snell Roundhand,cursive;
+    font-weight:bold;
+}
+
+/* Styles for the title animation when active */
+.overlay.active .title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styles for the action button animation */
+.actionButton {
+    padding: 10px 100px;
+    font-size: 1rem;
+    background-color: hsl(6, 100%, 35%);
+    border: none;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 0.5s ease, transform o.5s ease, background-color 0.3s ease;
+}
+.actionButton:hover {
+    background-color: #b34200;
+}
+
+/* Styles for the button animation when active */
+.overlay.active .actionButton {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Styles for Image 2 container */
+.image2Container {
+    display: flex;
+    padding-top: 2%;
+   
+
+}
+
+.leftContent1 {
+
+    justify-content: center;
+    font-family: Snell Roundhand, cursive;
+    font-weight: bold;
+   
+}
+.leftContent2 {
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+
+.leftContent {
+    padding-top: 5%;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+/* Styles for right content (new image) */
+.rightContent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Style for the new image */
+.image3 {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.collectionLink {
+    color:hsl(6, 100%, 35%);
+text-underline-offset: 5px;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.collectionLink:hover {
+    color: #b35f00;
+}
+
+
+.li {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: black;
+    
+}
+.contactinfo{
+list-style: none;
+    color: black;
+
+}

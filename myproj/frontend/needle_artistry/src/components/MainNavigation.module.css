@@ -1,0 +1,29 @@
+.navbar {
+    background-color: black;
+}
+
+.brand {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    margin-right: 12rem;
+}
+
+.navLink {
+    color: white;
+    margin-right: 2rem;
+    transition: color 0.3s ease-in-out;
+    
+    
+}
+
+.navLink:hover {
+    color: gray;
+}
+
+.centeredNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
